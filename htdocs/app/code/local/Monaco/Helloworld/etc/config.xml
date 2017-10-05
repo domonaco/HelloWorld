@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <modules>
+        <Monaco_Helloworld>
+            <version>0.1.0</version>
+        </Monaco_Helloworld>
+    </modules>
+    <global>
+        <blocks>
+            <monaco_helloworld>
+                <class>Monaco_Helloworld_Block</class>
+            </monaco_helloworld>
+        </blocks>
+        <helpers>
+            <monaco_helloworld>
+                <class>Monaco_Helloworld_Helper</class>
+            </monaco_helloworld>
+        </helpers>
+    </global>
+    <frontend>
+        <routers>
+            <monaco_helloworld>
+                <use>standard</use>
+                <args>
+                    <module>Monaco_Helloworld</module>
+                    <frontName>Hello</frontName>
+                </args>
+            </monaco_helloworld>
+        </routers>
+        <layout>
+            <updates>
+                <monaco_helloworld>
+                    <file>monaco_helloworld.xml</file>
+                </monaco_helloworld>
+            </updates>
+        </layout>
+    </frontend>
+    <default>
+        <monaco_helloworld>
+            <configuration>
+                <enabled>1</enabled>
+                <message>Test Message from config.xml</message>
+            </configuration>
+        </monaco_helloworld>
+    </default>
+</config>
